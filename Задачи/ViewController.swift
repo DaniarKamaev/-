@@ -8,12 +8,22 @@
 import UIKit
 
 class ViewController: UIViewController {
+    let viewModel = ViewModel()
+    let cell = "Cell"
+    let myTableView = UITableView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        createdTableView(myTableView)
     }
-
+    private func createdTableView(_ table: UITableView) {
+        table.frame = view.frame
+        table.register(UITableViewCell.self, forCellReuseIdentifier: cell)
+        table.delegate = self
+        table.dataSource = self
+        
+        view.addSubview(table)
+    }
 
 }
 

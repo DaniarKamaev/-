@@ -14,6 +14,10 @@
 		3B26687C2E367D3000A3AF34 /* ______.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B26687A2E367D3000A3AF34 /* ______.xcdatamodeld */; };
 		3B26687E2E367D3300A3AF34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B26687D2E367D3300A3AF34 /* Assets.xcassets */; };
 		3B2668812E367D3300A3AF34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B26687F2E367D3300A3AF34 /* LaunchScreen.storyboard */; };
+		3B26688E2E367E1200A3AF34 /* APIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26688D2E367E1200A3AF34 /* APIData.swift */; };
+		3B2668932E367E7200A3AF34 /* APIWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2668922E367E7200A3AF34 /* APIWork.swift */; };
+		3B2668992E36858A00A3AF34 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2668982E36858A00A3AF34 /* ViewModel.swift */; };
+		3B26689D2E36935F00A3AF34 /* extanshen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26689C2E36935F00A3AF34 /* extanshen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		3B26687D2E367D3300A3AF34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B2668802E367D3300A3AF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B2668822E367D3300A3AF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B26688D2E367E1200A3AF34 /* APIData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIData.swift; sourceTree = "<group>"; };
+		3B2668922E367E7200A3AF34 /* APIWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIWork.swift; sourceTree = "<group>"; };
+		3B2668982E36858A00A3AF34 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		3B26689C2E36935F00A3AF34 /* extanshen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extanshen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				3B2668702E367D2F00A3AF34 /* Задачи */,
-				3B26686F2E367D2F00A3AF34 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,21 +60,83 @@
 				3B26686E2E367D2F00A3AF34 /* Задачи.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		3B2668702E367D2F00A3AF34 /* Задачи */ = {
 			isa = PBXGroup;
 			children = (
-				3B2668712E367D2F00A3AF34 /* AppDelegate.swift */,
-				3B2668732E367D2F00A3AF34 /* SceneDelegate.swift */,
+				3B2668902E367E3100A3AF34 /* API */,
 				3B2668752E367D2F00A3AF34 /* ViewController.swift */,
-				3B2668772E367D2F00A3AF34 /* Main.storyboard */,
-				3B26687D2E367D3300A3AF34 /* Assets.xcassets */,
-				3B26687F2E367D3300A3AF34 /* LaunchScreen.storyboard */,
-				3B2668822E367D3300A3AF34 /* Info.plist */,
-				3B26687A2E367D3000A3AF34 /* ______.xcdatamodeld */,
+				3B26689B2E36934B00A3AF34 /* Core */,
+				3B26688A2E367DBC00A3AF34 /* Model */,
+				3B26688B2E367DD400A3AF34 /* Applications */,
+				3B2668892E367D4200A3AF34 /* Resurse */,
+				3B26686F2E367D2F00A3AF34 /* Products */,
 			);
 			path = "Задачи";
+			sourceTree = "<group>";
+		};
+		3B2668892E367D4200A3AF34 /* Resurse */ = {
+			isa = PBXGroup;
+			children = (
+				3B26687D2E367D3300A3AF34 /* Assets.xcassets */,
+				3B2668772E367D2F00A3AF34 /* Main.storyboard */,
+				3B26687F2E367D3300A3AF34 /* LaunchScreen.storyboard */,
+				3B2668822E367D3300A3AF34 /* Info.plist */,
+			);
+			path = Resurse;
+			sourceTree = "<group>";
+		};
+		3B26688A2E367DBC00A3AF34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B26687A2E367D3000A3AF34 /* ______.xcdatamodeld */,
+				3B2668982E36858A00A3AF34 /* ViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B26688B2E367DD400A3AF34 /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				3B2668712E367D2F00A3AF34 /* AppDelegate.swift */,
+				3B2668732E367D2F00A3AF34 /* SceneDelegate.swift */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		3B2668902E367E3100A3AF34 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3B2668962E367E7A00A3AF34 /* APIWork */,
+				3B2668912E367E3B00A3AF34 /* APIData */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		3B2668912E367E3B00A3AF34 /* APIData */ = {
+			isa = PBXGroup;
+			children = (
+				3B26688D2E367E1200A3AF34 /* APIData.swift */,
+			);
+			path = APIData;
+			sourceTree = "<group>";
+		};
+		3B2668962E367E7A00A3AF34 /* APIWork */ = {
+			isa = PBXGroup;
+			children = (
+				3B2668922E367E7200A3AF34 /* APIWork.swift */,
+			);
+			path = APIWork;
+			sourceTree = "<group>";
+		};
+		3B26689B2E36934B00A3AF34 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3B26689C2E36935F00A3AF34 /* extanshen.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,10 +209,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B26689D2E36935F00A3AF34 /* extanshen.swift in Sources */,
 				3B2668762E367D2F00A3AF34 /* ViewController.swift in Sources */,
 				3B26687C2E367D3000A3AF34 /* ______.xcdatamodeld in Sources */,
 				3B2668722E367D2F00A3AF34 /* AppDelegate.swift in Sources */,
+				3B26688E2E367E1200A3AF34 /* APIData.swift in Sources */,
 				3B2668742E367D2F00A3AF34 /* SceneDelegate.swift in Sources */,
+				3B2668932E367E7200A3AF34 /* APIWork.swift in Sources */,
+				3B2668992E36858A00A3AF34 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +364,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Задачи/Info.plist";
+				INFOPLIST_FILE = "Задачи/Resurse/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,7 +382,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Задачи/Info.plist";
+				INFOPLIST_FILE = "Задачи/Resurse/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
