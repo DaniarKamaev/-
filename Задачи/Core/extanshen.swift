@@ -9,16 +9,14 @@ import  UIKit
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return count.randomElement()!
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: self.cell)
-        viewModel.getId(index: indexPath.row) { (id, todu, isComplited, userId) in
-            DispatchQueue.main.async {
-                cell.textLabel?.text = todu
-            }
-        }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? CactomCell else { return UITableViewCell() }
+        cell.backgroundColor = .black
+        cell.textLabel?.textColor = .white
+        cell.configure(indexPath.row)
         return cell
     }
     

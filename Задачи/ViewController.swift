@@ -11,19 +11,18 @@ class ViewController: UIViewController {
     let viewModel = ViewModel()
     let cell = "Cell"
     let myTableView = UITableView()
+    let myLable = UILabel()
+    let count = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+                 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+                 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        createdTableView(myTableView)
+        navigationController?.navigationBar.isHidden = true
+        viewModel.createdMainLable(myLable, view)
+        viewModel.createdTableView(myTableView, view: view)
+        myTableView.delegate = self
+        myTableView.dataSource = self
     }
-    private func createdTableView(_ table: UITableView) {
-        table.frame = view.frame
-        table.register(UITableViewCell.self, forCellReuseIdentifier: cell)
-        table.delegate = self
-        table.dataSource = self
-        
-        view.addSubview(table)
-    }
-
 }
 

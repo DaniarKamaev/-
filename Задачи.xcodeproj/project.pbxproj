@@ -18,6 +18,8 @@
 		3B2668932E367E7200A3AF34 /* APIWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2668922E367E7200A3AF34 /* APIWork.swift */; };
 		3B2668992E36858A00A3AF34 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2668982E36858A00A3AF34 /* ViewModel.swift */; };
 		3B26689D2E36935F00A3AF34 /* extanshen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26689C2E36935F00A3AF34 /* extanshen.swift */; };
+		3B2668A12E36A1C500A3AF34 /* protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2668A02E36A1C500A3AF34 /* protocol.swift */; };
+		3B2668A52E36BB2F00A3AF34 /* CastomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2668A42E36BB2F00A3AF34 /* CastomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		3B2668922E367E7200A3AF34 /* APIWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIWork.swift; sourceTree = "<group>"; };
 		3B2668982E36858A00A3AF34 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		3B26689C2E36935F00A3AF34 /* extanshen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extanshen.swift; sourceTree = "<group>"; };
+		3B2668A02E36A1C500A3AF34 /* protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocol.swift; sourceTree = "<group>"; };
+		3B2668A42E36BB2F00A3AF34 /* CastomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				3B26687A2E367D3000A3AF34 /* ______.xcdatamodeld */,
-				3B2668982E36858A00A3AF34 /* ViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -135,8 +138,19 @@
 			isa = PBXGroup;
 			children = (
 				3B26689C2E36935F00A3AF34 /* extanshen.swift */,
+				3B2668982E36858A00A3AF34 /* ViewModel.swift */,
+				3B2A95072E36E73E005BD4FC /* Protocols */,
+				3B2668A42E36BB2F00A3AF34 /* CastomCell.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		3B2A95072E36E73E005BD4FC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3B2668A02E36A1C500A3AF34 /* protocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,8 +225,10 @@
 			files = (
 				3B26689D2E36935F00A3AF34 /* extanshen.swift in Sources */,
 				3B2668762E367D2F00A3AF34 /* ViewController.swift in Sources */,
+				3B2668A52E36BB2F00A3AF34 /* CastomCell.swift in Sources */,
 				3B26687C2E367D3000A3AF34 /* ______.xcdatamodeld in Sources */,
 				3B2668722E367D2F00A3AF34 /* AppDelegate.swift in Sources */,
+				3B2668A12E36A1C500A3AF34 /* protocol.swift in Sources */,
 				3B26688E2E367E1200A3AF34 /* APIData.swift in Sources */,
 				3B2668742E367D2F00A3AF34 /* SceneDelegate.swift in Sources */,
 				3B2668932E367E7200A3AF34 /* APIWork.swift in Sources */,
