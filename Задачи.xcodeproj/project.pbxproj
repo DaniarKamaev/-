@@ -17,9 +17,12 @@
 		3B26688E2E367E1200A3AF34 /* APIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26688D2E367E1200A3AF34 /* APIData.swift */; };
 		3B2668932E367E7200A3AF34 /* APIWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2668922E367E7200A3AF34 /* APIWork.swift */; };
 		3B2668992E36858A00A3AF34 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2668982E36858A00A3AF34 /* ViewModel.swift */; };
-		3B26689D2E36935F00A3AF34 /* extanshen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26689C2E36935F00A3AF34 /* extanshen.swift */; };
+		3B26689D2E36935F00A3AF34 /* extensionTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26689C2E36935F00A3AF34 /* extensionTable.swift */; };
 		3B2668A12E36A1C500A3AF34 /* protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2668A02E36A1C500A3AF34 /* protocol.swift */; };
 		3B2668A52E36BB2F00A3AF34 /* CastomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2668A42E36BB2F00A3AF34 /* CastomCell.swift */; };
+		3B2A950F2E36EFD2005BD4FC /* extensionScrol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2A950E2E36EFD2005BD4FC /* extensionScrol.swift */; };
+		3B2CD86C2E36F57700AFCA45 /* TextFuildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2CD86B2E36F57700AFCA45 /* TextFuildViewController.swift */; };
+		3B2CD86F2E37138500AFCA45 /* TasksFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2CD86E2E37138500AFCA45 /* TasksFooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +38,12 @@
 		3B26688D2E367E1200A3AF34 /* APIData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIData.swift; sourceTree = "<group>"; };
 		3B2668922E367E7200A3AF34 /* APIWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIWork.swift; sourceTree = "<group>"; };
 		3B2668982E36858A00A3AF34 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		3B26689C2E36935F00A3AF34 /* extanshen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extanshen.swift; sourceTree = "<group>"; };
+		3B26689C2E36935F00A3AF34 /* extensionTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionTable.swift; sourceTree = "<group>"; };
 		3B2668A02E36A1C500A3AF34 /* protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocol.swift; sourceTree = "<group>"; };
 		3B2668A42E36BB2F00A3AF34 /* CastomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastomCell.swift; sourceTree = "<group>"; };
+		3B2A950E2E36EFD2005BD4FC /* extensionScrol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionScrol.swift; sourceTree = "<group>"; };
+		3B2CD86B2E36F57700AFCA45 /* TextFuildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFuildViewController.swift; sourceTree = "<group>"; };
+		3B2CD86E2E37138500AFCA45 /* TasksFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksFooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				3B2668902E367E3100A3AF34 /* API */,
-				3B2668752E367D2F00A3AF34 /* ViewController.swift */,
+				3B2A950B2E36EF5D005BD4FC /* View */,
+				3B2A950C2E36EF87005BD4FC /* ViewModel */,
 				3B26689B2E36934B00A3AF34 /* Core */,
 				3B26688A2E367DBC00A3AF34 /* Model */,
 				3B26688B2E367DD400A3AF34 /* Applications */,
@@ -137,10 +144,8 @@
 		3B26689B2E36934B00A3AF34 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				3B26689C2E36935F00A3AF34 /* extanshen.swift */,
-				3B2668982E36858A00A3AF34 /* ViewModel.swift */,
+				3B2A950A2E36EF2B005BD4FC /* Extensions */,
 				3B2A95072E36E73E005BD4FC /* Protocols */,
-				3B2668A42E36BB2F00A3AF34 /* CastomCell.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -151,6 +156,34 @@
 				3B2668A02E36A1C500A3AF34 /* protocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3B2A950A2E36EF2B005BD4FC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3B26689C2E36935F00A3AF34 /* extensionTable.swift */,
+				3B2A950E2E36EFD2005BD4FC /* extensionScrol.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3B2A950B2E36EF5D005BD4FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B2668752E367D2F00A3AF34 /* ViewController.swift */,
+				3B2CD86B2E36F57700AFCA45 /* TextFuildViewController.swift */,
+				3B2668A42E36BB2F00A3AF34 /* CastomCell.swift */,
+				3B2CD86E2E37138500AFCA45 /* TasksFooterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B2A950C2E36EF87005BD4FC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3B2668982E36858A00A3AF34 /* ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,14 +256,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B26689D2E36935F00A3AF34 /* extanshen.swift in Sources */,
+				3B26689D2E36935F00A3AF34 /* extensionTable.swift in Sources */,
 				3B2668762E367D2F00A3AF34 /* ViewController.swift in Sources */,
 				3B2668A52E36BB2F00A3AF34 /* CastomCell.swift in Sources */,
 				3B26687C2E367D3000A3AF34 /* ______.xcdatamodeld in Sources */,
+				3B2CD86C2E36F57700AFCA45 /* TextFuildViewController.swift in Sources */,
 				3B2668722E367D2F00A3AF34 /* AppDelegate.swift in Sources */,
+				3B2A950F2E36EFD2005BD4FC /* extensionScrol.swift in Sources */,
 				3B2668A12E36A1C500A3AF34 /* protocol.swift in Sources */,
 				3B26688E2E367E1200A3AF34 /* APIData.swift in Sources */,
 				3B2668742E367D2F00A3AF34 /* SceneDelegate.swift in Sources */,
+				3B2CD86F2E37138500AFCA45 /* TasksFooterView.swift in Sources */,
 				3B2668932E367E7200A3AF34 /* APIWork.swift in Sources */,
 				3B2668992E36858A00A3AF34 /* ViewModel.swift in Sources */,
 			);

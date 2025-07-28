@@ -7,7 +7,7 @@
 import UIKit
 
 class CactomCell: UITableViewCell {
-    
+    let api = APIWork()
     let viewModel = ViewModel()
     
     // MARK: - UI Elements
@@ -107,7 +107,7 @@ class CactomCell: UITableViewCell {
     
     // MARK: - Configuration
     func configure(_ indexPath: Int) {
-        viewModel.get(index: indexPath) { id, todu, isCreated, userId, _ in
+        api.get(index: indexPath) { id, todu, isCreated, userId, _ in
             DispatchQueue.main.async {
                 self.titleLabel.text = "Задача № \(id ?? 0)"
                 self.descriptionLabel.text = todu
